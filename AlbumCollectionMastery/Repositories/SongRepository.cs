@@ -6,7 +6,7 @@ using AlbumCollectionMastery.Models;
 
 namespace AlbumCollectionMastery.Repositories
 {
-    public class SongRepository
+    public class SongRepository : ISongRepository
     {
         AlbumContext db;
         public SongRepository(AlbumContext db)
