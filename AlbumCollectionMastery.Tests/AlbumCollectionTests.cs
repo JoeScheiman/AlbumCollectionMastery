@@ -3,7 +3,7 @@ using Xunit;
 
 namespace AlbumCollectionMastery.Tests
 {
-    public class UnitTest1
+    public class AlbumCollectionTests
     {
         [Fact]
         public void Test1()
