@@ -21,6 +21,95 @@ namespace AlbumCollectionMastery
             base.OnConfiguring(optionsBuilder);
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Album>().HasData(
+
+                new Album()
+                {
+                    AlbumId = 1,
+                    AlbumTitle = "Classic Rock"
+                },
+
+                new Album()
+                {
+                    AlbumId = 2,
+                    AlbumTitle = "Programming Tunez"
+                },
+
+                new Album()
+                {
+                    AlbumId = 3,
+                    AlbumTitle = "Funky-ish"
+                });
+
+            modelBuilder.Entity<Song>().HasData(
+
+                new Song()
+                {
+                    SongId = 1,
+                    AlbumId = 1,
+                    SongTitle = "Tom Sawyer"
+                },
+
+                new Song()
+                {
+                    SongId = 2,
+                    AlbumId = 1,
+                    SongTitle = "All Along the Watchtower"
+                },
+
+                new Song()
+                {
+                    SongId = 3,
+                    AlbumId = 1,
+                    SongTitle = "Dazed and Confused"
+                },
+
+                new Song()
+                {
+                    SongId = 4,
+                    AlbumId = 2,
+                    SongTitle = "Jabon"
+                },
+
+                new Song()
+                {
+                    SongId = 5,
+                    AlbumId = 1,
+                    SongTitle = "Take Five"
+                },
+
+                new Song()
+                {
+                    SongId = 6,
+                    AlbumId = 1,
+                    SongTitle = "Stream of Consciousness"
+                },
+
+                new Song()
+                {
+                    SongId = 7,
+                    AlbumId = 1,
+                    SongTitle = "Dean Town"
+                },
+
+                new Song()
+                {
+                    SongId = 8,
+                    AlbumId = 1,
+                    SongTitle = "Time Traveler"
+                },
+
+                new Song()
+                {
+                    SongId = 9,
+                    AlbumId = 1,
+                    SongTitle = "It Gets Funkier IV"
+                });
+
+            base.OnModelCreating(modelBuilder);
+        }
 
 
     }

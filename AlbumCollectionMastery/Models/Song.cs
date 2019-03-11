@@ -8,13 +8,14 @@ namespace AlbumCollectionMastery.Models
 {
     public class Song
     {
+        [Key]
         public int SongId { get; set; }
 
         [Display(Name = "Song Title:")]
         public string SongTitle { get; set; }
 
-        //public int AlbumId { get; set; }
-        //public virtual Album Album { get; set; }
+        public int AlbumId { get; set; }
+        public virtual Album Album { get; set; }
 
     }
 }

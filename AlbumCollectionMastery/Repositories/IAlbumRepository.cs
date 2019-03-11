@@ -10,6 +10,6 @@ namespace AlbumCollectionMastery.Repositories
     {
         IEnumerable<Album> GetAll();
         Album GetById(int id);
-        
+        void Create(Album newAlbum);
     }
 }
