@@ -4,6 +4,15 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
+ul {
+    background: #0026ff;
+    padding: 20px;
+}
+
+    ul li {
+        background: #cce5ff;
+        margin: 5px;
+    }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */

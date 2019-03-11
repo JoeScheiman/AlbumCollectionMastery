@@ -76,35 +76,35 @@ namespace AlbumCollectionMastery
                 new Song()
                 {
                     SongId = 5,
-                    AlbumId = 1,
+                    AlbumId = 2,
                     SongTitle = "Take Five"
                 },
 
                 new Song()
                 {
                     SongId = 6,
-                    AlbumId = 1,
+                    AlbumId = 2,
                     SongTitle = "Stream of Consciousness"
                 },
 
                 new Song()
                 {
                     SongId = 7,
-                    AlbumId = 1,
+                    AlbumId = 3,
                     SongTitle = "Dean Town"
                 },
 
                 new Song()
                 {
                     SongId = 8,
-                    AlbumId = 1,
+                    AlbumId = 3,
                     SongTitle = "Time Traveler"
                 },
 
                 new Song()
                 {
                     SongId = 9,
-                    AlbumId = 1,
+                    AlbumId = 3,
                     SongTitle = "It Gets Funkier IV"
                 });
 

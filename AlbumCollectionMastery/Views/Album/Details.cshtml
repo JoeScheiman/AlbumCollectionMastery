@@ -9,25 +9,39 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
+    <title>Album Track List</title>
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
 
-<div>
-    <h4>Album</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.AlbumTitle)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.AlbumTitle)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.AlbumId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div>
+        <h4>@Model.AlbumTitle Track List</h4>
+        <hr />
+        <div class="main">
+            @*<h1>The Albums</h1>*@
+            <ul class="albums">
+                @foreach (var song in Model.Songs)
+                {
+                    <li>
+                        <p>@song.SongTitle</p>
+                    </li>
+                }
+            </ul>
+        </div>
+        @*<dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.AlbumTitle)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.AlbumTitle)
+            </dd>
+        </dl>*@
+        <p><a href="/Song/Create/@Model.AlbumId">Add a Song</a></p>
+        <p><a href="/Album" asp-action="Index">Back to Album List</a></p>
+    </div>
+
+    @*<a asp-action="Edit" asp-route-id="@Model.AlbumId">Edit</a>*@ |
+    
+
 </body>
 </html>

@@ -15,7 +15,7 @@ namespace AlbumCollectionMastery.Models
         public string SongTitle { get; set; }
 
         public int AlbumId { get; set; }
-        public virtual Album Album { get; set; }
+        
 
     }
 }
