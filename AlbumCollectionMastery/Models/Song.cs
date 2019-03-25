@@ -13,6 +13,8 @@ namespace AlbumCollectionMastery.Models
 
         [Display(Name = "Song Title:")]
         public string SongTitle { get; set; }
+        [Display(Name = "Artist Name:")]
+        public string SongArtist { get; set; }
 
         public int AlbumId { get; set; }
         

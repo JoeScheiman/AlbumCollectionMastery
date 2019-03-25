@@ -35,12 +35,12 @@ namespace AlbumCollectionMastery.Tests
         {
             var pass = true;
 
-            var newSong = new Song();
-            var wrongSong = new Song();
-            //This example is based off NSubstitute website,
-            //No Assert is needed.
+            var newSong = new Song();   //gets added to testRepo
+            var wrongSong = new Song(); //doesn't get added to testRepo
+                
+            //This is based off NSubstitute website, No Assert Needed! (Received, instead)
             testRepo.Create(newSong);
-            if(!pass) //Change var pass to false to see this fail
+            if(!pass) //Change var pass to false to see this fail - it works
                 testRepo.Received().Create(wrongSong);            
             
             if(pass)

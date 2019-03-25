@@ -27,6 +27,11 @@
                     <span asp-validation-for="SongTitle" class="text-danger"></span>
                 </div>
                 <div class="form-group">
+                    <label asp-for="SongArtist" class="control-label"></label>
+                    <input asp-for="SongArtist" class="form-control" />
+                    <span asp-validation-for="SongArtist" class="text-danger"></span>
+                </div>
+                <div class="form-group">
                     <input type="hidden" asp-for="AlbumId" class="form-control" placeholder="@Model.AlbumId">
                 </div>
                 <div class="form-group">

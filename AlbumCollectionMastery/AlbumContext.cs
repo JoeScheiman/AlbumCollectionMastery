@@ -49,63 +49,72 @@ namespace AlbumCollectionMastery
                 {
                     SongId = 1,
                     AlbumId = 1,
-                    SongTitle = "Tom Sawyer"
+                    SongTitle = "Tom Sawyer",
+                    SongArtist = "Rush"
                 },
 
                 new Song()
                 {
                     SongId = 2,
                     AlbumId = 1,
-                    SongTitle = "All Along the Watchtower"
+                    SongTitle = "All Along the Watchtower",
+                    SongArtist = "Jimi Hendrix"
                 },
 
                 new Song()
                 {
                     SongId = 3,
                     AlbumId = 1,
-                    SongTitle = "Dazed and Confused"
+                    SongTitle = "Dazed and Confused",
+                    SongArtist = "Led Zeppelin"
                 },
 
                 new Song()
                 {
                     SongId = 4,
                     AlbumId = 2,
-                    SongTitle = "Jabon"
+                    SongTitle = "Jabon",
+                    SongArtist = "Jojo Mayer and the Nerve"
                 },
 
                 new Song()
                 {
                     SongId = 5,
                     AlbumId = 2,
-                    SongTitle = "Take Five"
+                    SongTitle = "Take Five",
+                    SongArtist = "Dave Brubeck Quartet"
                 },
 
                 new Song()
                 {
                     SongId = 6,
                     AlbumId = 2,
-                    SongTitle = "Stream of Consciousness"
+                    SongTitle = "Stream of Consciousness",
+                    SongArtist = "Dream Theater"
                 },
 
                 new Song()
                 {
                     SongId = 7,
                     AlbumId = 3,
-                    SongTitle = "Dean Town"
+                    SongTitle = "Dean Town",
+                    SongArtist = "Vulfpeck"
                 },
 
                 new Song()
                 {
                     SongId = 8,
                     AlbumId = 3,
-                    SongTitle = "Time Traveler"
+                    SongTitle = "Time Traveler",
+                    SongArtist = "KNOWER"
                 },
 
                 new Song()
                 {
                     SongId = 9,
                     AlbumId = 3,
-                    SongTitle = "It Gets Funkier IV"
+                    SongTitle = "It Gets Funkier IV",
+                    SongArtist = "Vulfpeck f/ Louis Cole"
                 });
 
             base.OnModelCreating(modelBuilder);

@@ -3,14 +3,16 @@ using AlbumCollectionMastery;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AlbumCollectionMastery.Migrations
 {
     [DbContext(typeof(AlbumContext))]
-    partial class AlbumContextModelSnapshot : ModelSnapshot
+    [Migration("20190325054335_ArtistNameAdded")]
+    partial class ArtistNameAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -57,14 +59,14 @@ namespace AlbumCollectionMastery.Migrations
 
                     b.HasData(
                         new { SongId = 1, AlbumId = 1, SongArtist = "Rush", SongTitle = "Tom Sawyer" },
-                        new { SongId = 2, AlbumId = 1, SongArtist = "Jimi Hendrix", SongTitle = "All Along the Watchtower" },
-                        new { SongId = 3, AlbumId = 1, SongArtist = "Led Zeppelin", SongTitle = "Dazed and Confused" },
-                        new { SongId = 4, AlbumId = 2, SongArtist = "Jojo Mayer and the Nerve", SongTitle = "Jabon" },
-                        new { SongId = 5, AlbumId = 2, SongArtist = "Dave Brubeck Quartet", SongTitle = "Take Five" },
-                        new { SongId = 6, AlbumId = 2, SongArtist = "Dream Theater", SongTitle = "Stream of Consciousness" },
-                        new { SongId = 7, AlbumId = 3, SongArtist = "Vulfpeck", SongTitle = "Dean Town" },
-                        new { SongId = 8, AlbumId = 3, SongArtist = "KNOWER", SongTitle = "Time Traveler" },
-                        new { SongId = 9, AlbumId = 3, SongArtist = "Vulfpeck f/ Louis Cole", SongTitle = "It Gets Funkier IV" }
+                        new { SongId = 2, AlbumId = 1, SongArtist = "Rush", SongTitle = "All Along the Watchtower" },
+                        new { SongId = 3, AlbumId = 1, SongArtist = "Rush", SongTitle = "Dazed and Confused" },
+                        new { SongId = 4, AlbumId = 2, SongArtist = "Rush", SongTitle = "Jabon" },
+                        new { SongId = 5, AlbumId = 2, SongArtist = "Rush", SongTitle = "Take Five" },
+                        new { SongId = 6, AlbumId = 2, SongArtist = "Rush", SongTitle = "Stream of Consciousness" },
+                        new { SongId = 7, AlbumId = 3, SongArtist = "Rush", SongTitle = "Dean Town" },
+                        new { SongId = 8, AlbumId = 3, SongArtist = "Rush", SongTitle = "Time Traveler" },
+                        new { SongId = 9, AlbumId = 3, SongArtist = "Rush", SongTitle = "It Gets Funkier IV" }
                     );
                 });
 
